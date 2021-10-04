@@ -10,20 +10,19 @@ const Navbar = () => {
       <div className="nav-items-container">
         <ul className="nav-items">
           <NavLink to="/" className="nav-link">
-            HOME
-            <i class="fas fa-home"></i>
+            <i class="fas fa-home"></i> <span>HOME</span>
           </NavLink>
           <NavLink to="/search" className="nav-link">
-            SEARCH<i class="fas fa-search"></i>
+            <i class="fas fa-search"></i> <span>Search</span>
           </NavLink>
           <NavLink to="/offers" className="nav-link">
-            OFFERS<i class="fab fa-algolia"></i>
+            <i class="fab fa-algolia"></i> <span>OFFERS</span>
           </NavLink>
           <NavLink to="/cart" className="nav-link">
-            CART<i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-shopping-cart"></i> <span>CART</span>
           </NavLink>
           <NavLink to="/signup" className="nav-link">
-            SIGNUP<i class="fas fa-user-plus"></i>
+            <i class="fas fa-user-plus"></i> <span>SIGNUP</span>
           </NavLink>
         </ul>
       </div>
