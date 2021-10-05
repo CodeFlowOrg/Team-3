@@ -26,7 +26,9 @@
   text-decoration: none;
   color: white;
 }
-
+.nav-link > span {
+  margin-left: 2px;
+}
 @media only screen and (max-width: 720px) {
   .nav-container {
     width: 100%;
