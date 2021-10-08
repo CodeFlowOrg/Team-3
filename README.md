@@ -10,6 +10,7 @@
 
 ## General info
 We know that a lot of people   who are staying away from their home for studies/work often endup eating unhealthy foods at the restaurants.We decided to bridge the gap by developing website that allows users to find healthy homemade foods at a lower and affordable price nearby.
+The application is still under development.You can have a look at the design here <a>https://www.figma.com/file/eaXhLUuYXdYQHsnYGm8rXx/Untitled?node-id=0%3A1</a>.
 	
 ## Technologies
 Project is created with:
