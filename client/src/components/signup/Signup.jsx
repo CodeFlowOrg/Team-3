@@ -48,4 +48,4 @@ const Details=styled.div`
 `;
 const Detail=styled.div`
  border:3px solid yellow;
-`
+`;
