@@ -5,3 +5,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
+.form input{
+    border:hidden;
+    outline:none;
+    border-bottom-style: groove;
+    border-bottom: 3px solid rgb(239, 243, 10);
+}

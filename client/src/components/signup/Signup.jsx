@@ -1,20 +1,31 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Signup.css';
 import styled from 'styled-components'; 
+import { Button } from '@material-ui/core';
 
 export default function Signup() {
+  const [user, setuser] = useState({
+    name:"",email:"",contact:"",address:"",password:"",confirm:""
+  })
+
+  const handleinput=(event)=>{
+    const {name,value}=event.target;
+    setuser({...user,[name]:value});
+  }
+
     return (
         <>
           <Mainbox>
-              <Header></Header>
-              <Details>
-                 <Detail>Name:  <input type="text" placeholder="Your Name" name="" id="" /></Detail>
-                 <Detail>Email: <input type="email" placeholder="Your Email" name="" id="" /></Detail>
-                 <Detail>Contact: <input type="number" placeholder="Your Contact Number" name="" id="" /></Detail>
-                 <Detail>Address: <input type="text" placeholder="Your Address" name="" id="" /></Detail>
-                 <Detail>Password: <input type="password" placeholder="Your Password" name="" id="" /></Detail>
-                 <Detail>Password: <input type="password" placeholder="Confirm Password" name="" id="" /></Detail>
+              <Header>Sign Up</Header>
+              <Details className="form">
+                 <Detail>Name:  <input type="text" placeholder="Your Name" name="name" id="" value={user.name} onChange={handleinput}/></Detail>
+                 <Detail>Email: <input type="email" placeholder="Your Email" name="email" id="" value={user.email} onChange={handleinput} /></Detail>
+                 <Detail>Contact: <input type="number" placeholder="Your Contact Number" name="contact" id="" value={user.contact} onChange={handleinput}/></Detail>
+                 <Detail>Address: <input type="text" placeholder="Your Address" name="address" id="" value={user.address}onChange={handleinput}/></Detail>
+                 <Detail>Password: <input type="password" placeholder="Your Password" name="password" id="" value={user.password}onChange={handleinput}/></Detail>
+                 <Detail>Password: <input type="password" placeholder="Confirm Password" name="confirm" id=""value={user.confirm} onChange={handleinput}/></Detail>
               </Details>
+              <Submit>Join Now</Submit>
           </Mainbox>
         </>
     )
@@ -22,7 +33,7 @@ export default function Signup() {
 
 
 const Mainbox=styled.div`
-  border:3px solid black;
+  border:3px solid rgb(239, 243, 10);
   height:400px;
   width:400px;
   display:flex;
@@ -33,12 +44,16 @@ const Mainbox=styled.div`
   margin-top:25px;
 `;
 const Header=styled.div`
- border:2px solid green;
  height:50px;
  width:95%;
+ font-size:30px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ Font-weight:800;
 `;
 const Details=styled.div`
- border:1px solid red;
+ //border:1px solid red;
  height:350px;
  width:95%;
  display:flex;
@@ -47,5 +62,15 @@ const Details=styled.div`
  align-items:center;
 `;
 const Detail=styled.div`
- border:3px solid yellow;
-`
+`;
+const Submit=styled.button`
+ margin:10px;
+ font-size:25px;
+ border:none;
+ background-color:rgb(239, 243, 10);
+ cursor:pointer;
+ :hover{
+   background-color:white;
+   color:black;
+ }
+`;
