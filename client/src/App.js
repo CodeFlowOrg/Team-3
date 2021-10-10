@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/home/home";
 import NavBar from "./components/navbar/navbar";
 import Signup from "./components/signup/Signup";
+import Order from "./components/Order/Order";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path='/signin' component={Signup}/>
           {/* define all the routes here */}
+          <Route path='/order' component={Order}/>
         </Switch>
       </Router>
     </>
