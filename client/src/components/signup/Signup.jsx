@@ -1,7 +1,9 @@
 import React,{useState} from 'react';
 import './Signup.css';
 import styled from 'styled-components'; 
-import { Button } from '@material-ui/core';
+// import CountrySelector from '../Country-Selector/CountrySelector';
+// import { Button } from '@material-ui/core';
+// import IndianState from '../Country-Selector/IndianState';
 
 export default function Signup() {
   const [user, setuser] = useState({
@@ -13,6 +15,10 @@ export default function Signup() {
     setuser({...user,[name]:value});
   }
 
+  const submituser=()=>{
+    setuser({name:"",email:"",contact:"",address:"",password:"",confirm:""});
+  }
+
     return (
         <>
           <Mainbox>
@@ -22,10 +28,13 @@ export default function Signup() {
                  <Detail>Email: <input type="email" placeholder="Your Email" name="email" id="" value={user.email} onChange={handleinput} /></Detail>
                  <Detail>Contact: <input type="number" placeholder="Your Contact Number" name="contact" id="" value={user.contact} onChange={handleinput}/></Detail>
                  <Detail>Address: <input type="text" placeholder="Your Address" name="address" id="" value={user.address}onChange={handleinput}/></Detail>
+                 {/* <Detail>
+                   <CountrySelector/>
+                 </Detail> */}
                  <Detail>Password: <input type="password" placeholder="Your Password" name="password" id="" value={user.password}onChange={handleinput}/></Detail>
                  <Detail>Password: <input type="password" placeholder="Confirm Password" name="confirm" id=""value={user.confirm} onChange={handleinput}/></Detail>
               </Details>
-              <Submit>Join Now</Submit>
+              <Submit onClick={submituser}>Join Now</Submit>
           </Mainbox>
         </>
     )
@@ -62,6 +71,7 @@ const Details=styled.div`
  align-items:center;
 `;
 const Detail=styled.div`
+ display:flex;
 `;
 const Submit=styled.button`
  margin:10px;
@@ -73,4 +83,5 @@ const Submit=styled.button`
    background-color:white;
    color:black;
  }
+ padding:5px;
 `;
