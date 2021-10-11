@@ -5,6 +5,7 @@ import Home from "./components/home/home";
 import NavBar from "./components/navbar/navbar";
 import Signup from "./components/signup/Signup";
 import Order from "./components/Order/Order";
+import Login from "./components/Login/Login";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path='/signin' component={Signup}/>
           {/* define all the routes here */}
           <Route path='/order' component={Order}/>
+          <Route path='/login' component={Login}/>
         </Switch>
       </Router>
     </>

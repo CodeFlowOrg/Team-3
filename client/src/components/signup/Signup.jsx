@@ -22,17 +22,20 @@ export default function Signup() {
     return (
         <>
           <Mainbox>
-              <Header>Sign Up</Header>
+              <Header>
+                Sign Up
+                <Login>Already have an account! <a href="/login">Login here</a> </Login>
+              </Header>
               <Details className="form">
-                 <Detail>Name:  <input type="text" placeholder="Your Name" name="name" id="" value={user.name} onChange={handleinput}/></Detail>
-                 <Detail>Email: <input type="email" placeholder="Your Email" name="email" id="" value={user.email} onChange={handleinput} /></Detail>
-                 <Detail>Contact: <input type="number" placeholder="Your Contact Number" name="contact" id="" value={user.contact} onChange={handleinput}/></Detail>
-                 <Detail>Address: <input type="text" placeholder="Your Address" name="address" id="" value={user.address}onChange={handleinput}/></Detail>
+                 <Detail><input type="text" placeholder="Your Name" name="name" id="" value={user.name} onChange={handleinput}/></Detail>
+                 <Detail><input type="email" placeholder="Your Email" name="email" id="" value={user.email} onChange={handleinput} /></Detail>
+                 <Detail><input type="number" placeholder="Your Contact Number" name="contact" id="" value={user.contact} onChange={handleinput}/></Detail>
+                 <Detail><input type="text" placeholder="Your Address" name="address" id="" value={user.address}onChange={handleinput}/></Detail>
                  {/* <Detail>
                    <CountrySelector/>
                  </Detail> */}
-                 <Detail>Password: <input type="password" placeholder="Your Password" name="password" id="" value={user.password}onChange={handleinput}/></Detail>
-                 <Detail>Password: <input type="password" placeholder="Confirm Password" name="confirm" id=""value={user.confirm} onChange={handleinput}/></Detail>
+                 <Detail><input type="password" placeholder="Your Password" name="password" id="" value={user.password}onChange={handleinput}/></Detail>
+                 <Detail><input type="password" placeholder="Confirm Password" name="confirm" id=""value={user.confirm} onChange={handleinput}/></Detail>
               </Details>
               <Submit onClick={submituser}>Join Now</Submit>
           </Mainbox>
@@ -42,6 +45,7 @@ export default function Signup() {
 
 
 const Mainbox=styled.div`
+  background-color:black;
   border:3px solid rgb(239, 243, 10);
   height:400px;
   width:400px;
@@ -53,16 +57,19 @@ const Mainbox=styled.div`
   margin-top:25px;
 `;
 const Header=styled.div`
- height:50px;
+ color:white;
+ height:100px;
  width:95%;
  font-size:30px;
  display:flex;
+ flex-direction:column;
  align-items:center;
  justify-content:center;
  Font-weight:800;
 `;
 const Details=styled.div`
  //border:1px solid red;
+ color:white;
  height:350px;
  width:95%;
  display:flex;
@@ -85,3 +92,7 @@ const Submit=styled.button`
  }
  padding:5px;
 `;
+
+const Login=styled.div`
+ font-size:15px;
+`
