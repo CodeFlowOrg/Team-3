@@ -7,11 +7,13 @@ import Signup from "./components/signup/Signup";
 import Order from "./components/Order/Order";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
+import { Resturant } from "./components/Resturants/Resturants";
 function App() {
   return (
     <>
       <Router>
         <NavBar />
+         <Resturant />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path='/signin' component={Signup} />
