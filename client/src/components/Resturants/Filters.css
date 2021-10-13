@@ -1,0 +1,56 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: orange;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* flex-direction: row; */
+}
+.list-items{
+    padding: 20px;
+}
+.list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.filter-button{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+.filter-button .bar{
+    height: 3px;
+    width: 100%;
+}
+
+@media  only screen and (min-width : 380px) and (max-width:600px) {
+    .filter-button{
+        display: flex;
+    }
+    .list{
+        display: none;
+        width: 100%;
+    }
+    .bar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-items{
+        flex-direction: column;
+        width: 100%;
+    }
+    li{
+        text-align: right;
+    }
+}
