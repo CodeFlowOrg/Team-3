@@ -8,17 +8,25 @@ import dish from "../dish.jfif"
 import { CardActions , Box, Grid } from "@mui/material";
 import {withStyles} from '@mui/styles'
 import { Filters } from "./Filters";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-
-const styles = theme => ({
+const styles = (theme) => ({
     cardMedia:{
         height:"300px",
-        width:"300px"
+        width:"300px",
+    },
+    cardMediaSM:{
+        height:"200px",
+        width:"200px",
     }
+    // console.log(theme);
 })
 
 const Resturant = withStyles(styles)(({classes})=>{
-
+    const theme = useTheme();
+    const isMatches = useMediaQuery(theme.breakpoints.up('sm'));
+    console.log(isMatches);
     const cardValues = [
         {
             img:dish,
@@ -46,15 +54,16 @@ const Resturant = withStyles(styles)(({classes})=>{
     return(
         <div >
             <Filters />
+            {/* <h1>{isMatches}</h1> */}
             <Grid container    display="flex" alignItems="center" justifyContent="center" >
             {
                 cardValues.map( (card) => {
                     return(
                     <Grid item xs={12} sm={6} md={3}>
-                       <Card sx={{ maxWidth: 350 }}>
+                       <Card sx={{ maxWidth: 350 , margin:2}} >
                        <CardMedia
                            component="img"
-                           className={classes.cardMedia}
+                           className={isMatches ? classes.cardMediaSM : classes.cardMedia}
                            image={card.img}
                            alt="Paella dish"
                        />

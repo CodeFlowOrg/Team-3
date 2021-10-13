@@ -7,10 +7,15 @@
 .list {
     margin: 0;
     padding: 0;
+   
+}
+.unordered-list-links{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    /* flex-direction: row; */
+}
+.result{
+    padding: 30px;
 }
 .list-items{
     padding: 20px;
@@ -22,11 +27,14 @@
 
 .filter-button{
     position: absolute;
+    right: 1rem;
+    top:5.5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 30px;
+    color: orange;
 }
 
 .filter-button .bar{
@@ -34,13 +42,19 @@
     width: 100%;
 }
 
-@media  only screen and (min-width : 380px) and (max-width:600px) {
-    .filter-button{
-        display: flex;
-    }
+@media  (max-width:480px) {
+   
     .list{
         display: none;
         width: 100%;
+        flex-direction: column;
+    }
+    .unordered-list-links{
+        flex-direction: column;
+    }
+    .filter-button{
+        display: flex;
+        align-content: flex-end;
     }
     .bar{
         flex-direction: column;
@@ -52,5 +66,12 @@
     }
     li{
         text-align: right;
+    }
+    .list li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .active{
+        display: flex;
     }
 }
