@@ -21,10 +21,10 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="home-right">
-            {/* <img
-            src={require("../../assets/images/photo-6.png").default}
-            alt=""
-          /> */}
+            <img
+              src={require("../../assets/images/photo-3.jpg").default}
+              alt=""
+            />
           </div>
         </div>
         <Resturant />

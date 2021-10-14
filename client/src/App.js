@@ -16,13 +16,11 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/signin" exact component={Signup} />
+          <Route path="/signup" exact component={Signup} />
           {/* define all the routes here */}
-          <Route path="/order" exact component={Order} />
+          <Route path="/cart" exact component={Order} />
           <Route path="/login" component={Login} />
         </Switch>
-
-        <Footer />
       </Router>
     </>
   );

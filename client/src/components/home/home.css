@@ -20,7 +20,7 @@
 .home-title {
   color: chocolate;
   font-family: "Ubuntu", sans-serif;
-  margin: 20px;
+  margin: 10px;
   width: 60%;
   font-size: 60px;
 }
@@ -30,12 +30,20 @@
 .home-right {
   width: 40%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-right > img {
-  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .home-input {
+  margin-top: 10px;
   width: 60%;
 }
 .home-input > input {

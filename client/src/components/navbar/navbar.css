@@ -27,8 +27,8 @@
   align-items: center;
   margin: 0 50px;
   text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
   color: chocolate;
-  font-weight: bold;
 }
 .nav-link > span {
   margin-left: 2px;
