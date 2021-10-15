@@ -8,12 +8,15 @@ import Order from "./components/Order/Order";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
 import { Resturant } from "./components/Resturants/Resturants";
+import { IndividualResturant } from "./components/Resturants/Individual-Resturant/IndividualResturant";
+
 function App() {
   return (
     <>
       <Router>
         <NavBar />
-         <Resturant />
+         {/* <Resturant /> */}
+         <IndividualResturant />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path='/signin' component={Signup} />
