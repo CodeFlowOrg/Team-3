@@ -13,7 +13,7 @@ const Navbar = () => {
             <i class="fas fa-home"></i> <span>HOME</span>
           </NavLink>
           <NavLink to="/search" className="nav-link">
-            <i class="fas fa-search"></i> <span>Search</span>
+            <i class="fas fa-search"></i> <span>SEARCH</span>
           </NavLink>
           <NavLink to="/offers" className="nav-link">
             <i class="fab fa-algolia"></i> <span>OFFERS</span>
@@ -21,8 +21,9 @@ const Navbar = () => {
           <NavLink to="/cart" className="nav-link">
             <i class="fas fa-shopping-cart"></i> <span>CART</span>
           </NavLink>
-          <NavLink to="/signup" className="nav-link">
-            <i class="fas fa-user-plus"></i> <span>SIGNUP</span>
+          <NavLink to="/signup" className="nav-link nav-signup">
+            <i class="fas fa-user-plus"></i>
+            <button className="signup-btn">SIGNUP</button>
           </NavLink>
         </ul>
       </div>

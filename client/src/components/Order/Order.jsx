@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Chicken from "../../Assets/Chicken.jpg";
-import './order.css';
+import Chicken from "../../assets/Chicken.jpg";
+import "./order.css";
 
 export default function Order() {
   return (
@@ -20,7 +20,8 @@ export default function Order() {
               <h2>Tandori Chicken</h2>
               <Box1>
                 <Add>
-                  <Quan>&nbsp;&nbsp;-&nbsp;&nbsp;</Quan>Add<Quan>&nbsp;&nbsp;+&nbsp;&nbsp;</Quan>
+                  <Quan>&nbsp;&nbsp;-&nbsp;&nbsp;</Quan>Add
+                  <Quan>&nbsp;&nbsp;+&nbsp;&nbsp;</Quan>
                 </Add>
               </Box1>
             </ItemList>
@@ -29,7 +30,9 @@ export default function Order() {
         </Left>
         <Right>
           <Content>
-            <h2><u>Bill Details</u></h2>
+            <h2>
+              <u>Bill Details</u>
+            </h2>
             <br />
             <br />
             <h3>Items Total &nbsp;&nbsp;: &nbsp;&nbsp;320</h3>
@@ -50,7 +53,7 @@ const Background = styled.div`
   margin: auto auto;
   background-color: black;
   margin-top: 30px;
-  justify-content:space-between;
+  justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column;
     min-height: 451px;
@@ -60,20 +63,20 @@ const Right = styled.div`
   width: 45%;
   min-height: 450px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  margin:auto auto;
+  margin: auto auto;
 `;
 const Left = styled.div`
   width: 45%;
   min-height: 450px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  margin:auto auto;
+  margin: auto auto;
 `;
 const Content = styled.div`
- margin-top:20px;
+  margin-top: 20px;
   height: 90%;
   width: 100%;
   display: flex;
@@ -90,7 +93,7 @@ const Text = styled.div`
   font-size: 30px;
 `;
 const ItemList = styled.div`
-  height:30px;
+  height: 30px;
   margin: 59px;
   color: white;
   display: flex;
@@ -106,15 +109,15 @@ const Box1 = styled.div`
   border:2px solid white;
   padding;2px;
 `;
-const Add=styled.div`
-display:flex;
-justify-content: center;
-align-items: center;
-padding:none;
-`
+const Add = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: none;
+`;
 const Quan = styled.div`
- margin:00px;
- padding:00px;
- border:1px solid white;
- cursor:pointer;
+  margin: 00px;
+  padding: 00px;
+  border: 1px solid white;
+  cursor: pointer;
 `;

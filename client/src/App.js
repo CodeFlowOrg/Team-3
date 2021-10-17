@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
+import Shape from "./components/comman/shapes/shape";
 import Home from "./components/home/home";
 import NavBar from "./components/navbar/navbar";
 import Signup from "./components/signup/Signup";
@@ -13,15 +14,13 @@ function App() {
     <>
       <Router>
         <NavBar />
-         <Resturant />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path='/signin' component={Signup} />
+          <Route path="/signup" exact component={Signup} />
           {/* define all the routes here */}
-          <Route path='/order' component={Order}/>
-          <Route path='/login' component={Login}/>
+          <Route path="/cart" exact component={Order} />
+          <Route path="/login" component={Login} />
         </Switch>
-        <Footer />
       </Router>
     </>
   );
