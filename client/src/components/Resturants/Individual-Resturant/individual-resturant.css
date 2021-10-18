@@ -1,0 +1,123 @@
+.resturant-info{
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.general-details{
+    display: flex;
+    color: white;
+}
+.img{
+   
+}
+.name-add-time{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.time-and-rating{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    margin-right: 15px;
+}
+.offer-code{
+    /* border: 1px solid white; */
+    color: white;
+    margin: 90px;
+    height: 85px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.menu{
+    padding: 70px;
+    margin: 10px;
+}
+.item{
+padding: 10px;
+width: 600px;
+height: 200px;
+display: flex;
+justify-content: space-between;
+}
+.text-and-rating{
+    display: flex;
+    flex-direction: column;
+}
+.image-and-add{
+    position: relative;
+}
+.image{
+    height: 180px;
+    width: 180px;
+}
+.btn{
+    position: absolute;
+    top: 70%;
+    left: 33%;
+    outline: none;
+    border: none;
+    padding: 8px;
+    font-size: smaller;
+    width: 85px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media  (max-width:480px){
+    .resturant-info{
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .general-details{
+        flex-direction: column;
+    }
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 260px;
+        height: 280px;
+    }
+    .rating{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+    .time-and-rating{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .time{
+        padding-bottom: 20px;
+    }
+    .offer-code{
+        margin: 10px;
+        text-align: center;
+    }
+    .name-add-time{
+        width: 350px;
+    }
+    .menu{
+        padding: 20px;
+        margin: 5px;
+    }
+    .item{
+        /* width: max-content; */
+        width: -webkit-max-content;
+    }
+    .image{
+        width: 130px;
+    }
+    .btn{
+        left: 25%;
+    }
+}
