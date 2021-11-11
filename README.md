@@ -35,6 +35,9 @@ Project is created with:
   * Manan Jain <a href=" https://www.linkedin.com/in/manan-jain-65aa561b7" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="Rose Kamal Love" height="20" width="40" /></a> 
 <!--    * Abhishek Mahalunge <a href="https://www.linkedin.com/in/abhishek-mahalunge/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="Rose Kamal Love" height="20" width="40" /></a>  -->
    * Badal Jha <a href="https://www.linkedin.com/in/badal-jha-807582166" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="Rose Kamal Love" height="20" width="40" /></a> 
+ 
+## Figma Wireframe
+https://www.figma.com/file/eaXhLUuYXdYQHsnYGm8rXx/Untitled?node-id=0%3A1
 
     
 
